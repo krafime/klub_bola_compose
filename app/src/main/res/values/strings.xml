@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Klub Bola Compose</string>
+    <string name="about">About</string>
+    <string name="personalName"><b>Muhammad Rafi Irfansyah</b></string>
+    <string name="personalEmail">krafime@gmail.com</string>
+    <string name="club_name">Nama Klub</string>
+    <string name="club_full_name">Nama Panjang Klub</string>
+    <string name="description">Deskripsi</string>
+    <string name="share">Bagikan</string>
+    <string name="back">Back</string>
+    <string-array name="data_full_name">
+        <item>Arema Football Club</item>
+        <item>Bali United Football Club	</item>
+        <item>Bhayangkara Football Club	</item>
+        <item>Borneo Samarinda</item>
+        <item>Dewa United Football Club</item>
+        <item>Madura United Football Club</item>
+        <item>Persatuan Sepakbola Surabaya</item>
+        <item>Persatuan Sepakbola Indonesia Bandung</item>
+        <item>Persatuan Sepakbola Indonesia Jakarta</item>
+        <item>Persatuan Sepakbola Indonesia Kediri</item>
+        <item>Persatuan Sepakbola Indonesia Kabupaten Bogor 1973</item>
+        <item>Persatuan Sepakbola Indonesia Solo</item>
+        <item>Persatuan Sepakbola Indonesia Tangerang</item>
+        <item>Persatuan Sepakbola Barito Putera</item>
+        <item>Persatuan Sepakbola Indonesia Semarang</item>
+        <item>Persatuan Sepakbola Makassar	</item>
+        <item>Perserikatan Sepakbola Sleman	</item>
+        <item>Raffi Ahmad Nagita Slavina Nusantara Football Club</item>
+    </string-array>
+    <string-array name="data_name">
+        <item>Arema FC</item>
+        <item>Bali United FC</item>
+        <item>Bhayangkara FC</item>
+        <item>Borneo Samarinda</item>
+        <item>Dewa United FC</item>
+        <item>Madura United FC</item>
+        <item>Persebaya</item>
+        <item>Persib</item>
+        <item>Persija</item>
+        <item>Persik</item>
+        <item>Persikabo 1973</item>
+        <item>Persis</item>
+        <item>Persita</item>
+        <item>PS Barito Putera</item>
+        <item>PSIS</item>
+        <item>PSM</item>
+        <item>PSS</item>
+        <item>RANS Nusantara FC</item>
+    </string-array>
+    <string-array name="data_description">
+        <item>Arema Football Club adalah sebuah klub sepak bola profesional yang berasal dari Malang, Jawa Timur, Indonesia. Arema berkompetisi di Liga 1 yang merupakan kasta tertinggi sepak bola Indonesia. Arema juga dikenal dengan sebutan "Singo Edan" ("Singa Gila" dalam Bahasa Jawa).</item>
+        <item>Bali United FC (sebelumnya bernama Persisam Putra Samarinda) adalah klub sepak bola profesional Indonesia yang berbasis di Kabupaten Gianyar, Bali. Klub ini sebelumnya bernama Persatuan Sepak Bola Indonesia Samarinda (Persisam) yang merupakan eks tim Perserikatan dan Putra Samarinda dari Galatama.</item>
+        <item>Cikal bakal klub ini berawal dari Dualisme Persebaya Surabaya yang beralih ke Liga Primer Indonesia dan mengubah namanya menjadi Persebaya 1927 di bawah PT Persebaya Indonesia. Pada saat itu, tim yang dulu bernama Persikubar Kutai Barat diboyong ke Surabaya dan diubah namanya menjadi Persebaya Surabaya oleh Wisnu Wardhana di bawah PT Mitra Muda Inti Berlian (MMIB) agar Surabaya memiliki wakil di liga resmi PSSI.</item>
+        <item>Borneo FC (sering juga disebut Borneo Samarinda) adalah klub sepak bola Indonesia yang berasal dari Samarinda, Kalimantan Timur, Indonesia. Pada awal berdirinya klub ini bermain di Divisi Utama Liga Indonesia 2014 setelah mengakuisisi klub Perseba Super Bangkalan pada 19 Maret 2014, menggantikan Persisam Samarinda sebagai klub asal Samarinda yang berkompetisi di kasta teratas di Indonesia.</item>
+        <item>Dewa United Football Club (atau disingkat sebagai Dewa United FC, sebelumnya bernama Martapura Dewa United FC) adalah klub sepak bola Indonesia yang berdiri pada 22 Februari 2021 dan bermarkas di Indomilk Arena, Kabupaten Tangerang, Banten. Dewa United FC memiliki julukan yaitu Tangsel Warrior. Klub ini didirikan oleh Tommy Hermawan Lo, Rendra Soedjono dan Kevin Hardiman setelah mengakusisi saham klub Liga 2 Indonesia yaitu Martapura FC.</item>
+        <item>Klub ini resmi didirikan pada 10 Januari 2016 melalui proses akuisisi. Madura United FC sebelumnya bernama Pelita Jaya dan Pelita Bandung Raya. Akan tetapi pada januari 2016 pemilik Pelita Bandung Raya, Ari D. Sutedi akhirnya menjual klubnya kepada Achsanul Qosasi yang notabene adalah seorang tokoh publik terkemuka di Pulau Madura dan kemudian bertransformasi menjadi Madura United FC. Madura United FC saat ini telah menjelma menjadi salah satu kekuatan utama di kompetisi kasta tertinggi sepakbola Indonesia.</item>
+        <item>Persatuan Sepak Bola Surabaya (atau biasa disebut Persebaya Surabaya, disingkat Persebaya) adalah sebuah klub sepak bola profesional Indonesia yang berbasis di kota Surabaya, Jawa Timur. Saat ini Persebaya berkompetisi Liga 1 Indonesia. Persebaya berdiri pada 18 Juni 1927 sebagai Soerabajasche Indonesische Voetbal Bond (SIVB). Persebaya pernah mengubah namanya menjadi Persebaya 1927 akibat dari konflik Dualisme Persebaya Surabaya yang terjadi pada tahun 2010 hingga 2017 yang menyebabkan keanggotaan Persebaya di PSSI dibekukan.</item>
+        <item>Sebelum lahirnya Persib Bandung, di Kota Bandung telah berdiri klub sepak bola Bandoeng Inlandsche Voetbal Bond (BIVB) pada sekitar tahun 1923. BIVB ini merupakan salah satu organisasi perjuangan kaum nasionalis pada masa itu. Tercatat sebagai Ketua Umum BIVB adalah Mr. Syamsudin yang kemudian diteruskan oleh R. Atot, putra dari pahlawan nasional Dewi Sartika. Atot juga tercatat sebagai Komisaris Daerah Jawa Barat yang pertama. BIVB memanfaatkan lapangan Tegallega di depan tribun pacuan kuda.</item>
+        <item>Pada zaman Hindia Belanda, nama awal Persija adalah VIJ (Voetbalbond Indonesische Jacatra). Pasca-Republik Indonesia kembali ke bentuk negara kesatuan, VIJ berganti nama menjadi Persija (Persatuan sepak bola Indonesia Jakarta). Saat masih bernama VIJ, markas Persija berada di Stadion VIJ. Sejumlah nama ikut membesarkan klub ibu kota ini. Diantaranya tercatat dalam sejarah Persija Jakarta nama M.H. Thamrin, yang diakui sebagai pahlawan nasional. Selain itu ada juga nama Habib Ali Kwitang, yang tercatat ikut membesarkan Persija.</item>
+        <item>Persatuan Sepak Bola Indonesia Kediri (disingkat Persik) merupakan klub sepak bola profesional Indonesia yang berbasis di kota Kediri, Jawa Timur. Klub didirikan tahun 1950 dan bermarkas di Stadion Brawijaya kota Kediri. Klub saat ini berkompetisi di Liga 1 yang merupakan kasta tertinggi sepak bola di liga Indonesia. Persik Kediri dipromosikan ke tingkat atas pada tahun 2002 dan mulai bermain di Divisi Utama Liga Indonesia 2003. Sejak liga Indonesia dimulai di tahun 1994, Persik telah memenangkan masing-masing edisi 2003 dan 2006.</item>
+        <item>Persikabo 1973 memiliki sejarah panjang sebelum menjadi tim sepak bola profesional saat ini. Ketika pertama kali berdiri pada tahun 2015, Persikabo 1973 bernama PS TNI (Persatuan Sepak bola Tentara Nasional Indonesia) yang merupakan tim sepak bola amatir yang dimiliki oleh TNI. Nama PS TNI baru muncul ketika digelarnya kompetisi Piala Jenderal Sudirman 2015, pada turnamen ini PS TNI bekerja sama dengan PSMS Medan untuk dapat menggunakan pemain-pemain milik PSMS Medan dalam mengikuti turnamen ini, dan PS TNI menjadi satu-satunya tim non peserta Liga Super Indonesia yang ikut turnamen Piala Jenderal Sudirman.</item>
+        <item>Persatuan Sepak Bola Indonesia Surakarta disingkat Persis umumnya di kenal sebagai Persis Solo adalah sebuah klub sepak bola profesional Indonesia yang berbasis di Surakarta, Jawa Tengah. Klub ini awalnya menggunakan nama Vorstenlandsche Voetbal Bond (VVB), yang didirikan oleh Sastrosaksono, Raden Ngabehi Reksodiprojo dan Sutarman pada tanggal 8 November 1923, dan secara resmi berganti nama menjadi seperti saat ini pada tahun 1935. Persis Surakarta juga merupakan salah satu klub pendiri PSSI.</item>
+        <item>Persatuan Sepak bola Indonesia Tangerang (disingkat Persita atau Persita Tangerang) adalah sebuah klub sepak bola Indonesia yang bermarkas di Kabupaten Tangerang. Tim berjuluk Pendekar Cisadane yang identik dengan jersey berwarna violet. Persita Tangerang saat ini bermain di liga tertinggi Indonesia, Liga 1. Pada tahun 2002 klub ini berhasil menjadi runner-up nasional. Sebelum dipromosikan ke Liga 1 pada tahun 2020, Persita Tangerang terakhir kali bermain pada tahun 2014 di liga tertinggi Indonesia, yang saat itu bernama Liga Super Indonesia.</item>
+        <item>Barito Putera dibentuk dengan harapan memajukan sepak bola Kalimantan Selatan. Lahir dari inisiatif H. Abdussamad Sulaiman HB. Kerangka awal tim berasal dari Persinus Banjarmasin, klub amatir asal Kalimantan Selatan yang juga didirikan oleh Abdussamad pada tahun 1975, dan dari tim persiapan PON Kalimantan Selatan tahun 1988, seperti Radiani, Tarmizi (Barabai), Masransyah (Rantau), Abdillah, Sultan (Martapura), dua bersaudara M. Yusuf dan M. Riduan, Sir Yusuf Huwae, Enong Noordiansyah, dan Marjono (Banjarmasin).</item>
+        <item>Persatuan Sepak Bola Indonesia Semarang atau biasa disingkat PSIS Semarang adalah klub sepak bola profesional yang berbasis di Kota Semarang, Jawa Tengah, Indonesia dengan bermarkas di Stadion Jatidiri, Semarang. Julukan klub ini adalah Laskar Mahesa Jenar. PSIS Semarang adalah klub pertama di Liga Indonesia yang pernah menjadi juara Divisi Utama (1999) dan kemudian terdegradasi ke Divisi Satu pada musim berikutnya (2000). PSIS kemudian berhasil menjuarai kompetisi Divisi Satu nasional (2001), dan berhak berlaga kembali di kompetisi Divisi Utama Liga Indonesia.</item>
+        <item>Persatuan Sepak bola Makassar (disingkat PSM Makassar) adalah sebuah tim sepak bola profesional Indonesia yang berbasis di Kota Makassar, Sulawesi Selatan. PSM Makassar didirikan pada 1915 sebagai Macassarche Voetbalbond (MVB) membuat PSM menjadi klub sepak bola tertua di Indonesia. Saat ini klub tersebut bermain di BRI Liga 1. Walaupun berbasis di Kota Makassar, saat ini PSM memainkan laga kandangnya bukan di Kota Makassar, melainkan berkandang di Stadion Gelora B. J. Habibie, Kota Parepare.</item>
+        <item>Perserikatan Sepakbola Sleman (PSS) merupakan klub sepak bola professional yang bermain di liga indonesia dan berbasis di Kabupaten Sleman, Daerah Istimewa Yogyakarta, Indonesia. PSS didirikan pada tanggal 20 Mei 1976. PSS memliliki julukan Super Elang Jawa (disingkat Super Elja), selain itu PSS juga memiliki julukan Laskar Sembada merujuk pada awal didirikannya sebagai tim perserikatan dari Kabupaten Sleman. PSS berkompetisi di Liga 1 Indonesia. Stadion utama PSS adalah Stadion Maguwoharjo, setelah pindah dari Stadion Tridadi pada tahun 2007.</item>
+        <item>RANS FC baru berdiri pada tahun 2012 dan tidak memiliki banyak sejarah dalam persepakbolaan Indonesia. Sebelumnya RANS FC bernama Cilegon United. Pada awal berdirinya, tim ini sudah berhasil menjuarai Divisi III LI 2012 Zona Banten dan berhasil promosi ke Divisi Dua Liga Indonesia. Di musim berikutnya, mereka berhasil menjadi juara dan promosi setelah mengalahkan Jember United dengan skor 6–3. Pada Divisi Satu, mereka menjuarai Divisi Satu Liga Indonesia 2014 dan untuk pertama kali promosi ke Divisi Utama setelah mengalahkan Persibat Batang pada adu penalti 3–0.</item>
+
+    </string-array>
+    <string-array name="data_photo">
+        <item>https://upload.wikimedia.org/wikipedia/id/thumb/4/40/Logo_Arema_FC_2017_logo.svg/454px-Logo_Arema_FC_2017_logo.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/id/thumb/5/5e/Bali_United_logo.svg/400px-Bali_United_logo.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/en/thumb/6/6a/Bhayangkara_FC_logo.svg/1200px-Bhayangkara_FC_logo.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/id/thumb/4/4d/Logo_Borneo_FC.svg/400px-Logo_Borneo_FC.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/id/5/53/Dewa_United_FC.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/id/8/8a/Madura_United_FC.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/id/thumb/a/a1/Persebaya_logo.svg/400px-Persebaya_logo.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/id/1/12/Logo_Persib.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/id/9/94/Persija_Jakarta_logo.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/id/c/cd/Logo_Persik_Kediri.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/id/thumb/0/05/Persikabo_1973_logo.png/370px-Persikabo_1973_logo.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/id/thumb/d/d6/Persis_Solo_logo.svg/400px-Persis_Solo_logo.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/id/thumb/9/95/Persita_logo_%282020%29.svg/350px-Persita_logo_%282020%29.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/id/b/b8/Barito_Putera_logo.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/id/thumb/f/f5/PSIS_logo.svg/360px-PSIS_logo.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/id/b/b8/Logo_PSM_Makasar_Baru.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/id/thumb/c/c9/PSS_Sleman_logo.svg/340px-PSS_Sleman_logo.svg.png</item>
+        <item>https://upload.wikimedia.org/wikipedia/id/4/49/Logo_RANS_Nusantara_FC.png</item>
+    </string-array>
+</resources>
