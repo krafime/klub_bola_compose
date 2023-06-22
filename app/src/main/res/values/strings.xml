@@ -8,6 +8,9 @@
     <string name="description">Deskripsi</string>
     <string name="share">Bagikan</string>
     <string name="back">Back</string>
+    <string name="creator">About Creator</string>
+    <string name="muhammad_rafi_irfansyah">Muhammad Rafi Irfansyah</string>
+    <string name="email">krafime@gmail.com</string>
     <string-array name="data_full_name">
         <item>Arema Football Club</item>
         <item>Bali United Football Club	</item>

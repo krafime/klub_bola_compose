@@ -17,6 +17,8 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.Favorite
+import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -26,6 +28,9 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
@@ -45,6 +50,7 @@ class ClubDetailsActivity : ComponentActivity() {
     )
 
     private lateinit var club: Club
+    private var isFavorite by mutableStateOf(false)
 
     @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -72,6 +78,17 @@ class ClubDetailsActivity : ComponentActivity() {
                                             contentDescription = stringResource(R.string.back)
                                         )
                                     }
+                                },
+                                actions = {
+                                    IconButton(
+                                        onClick = { isFavorite = !isFavorite },
+                                        modifier = Modifier.padding(end = 8.dp)
+                                    ) {
+                                        Icon(
+                                            imageVector = if (isFavorite) Icons.Default.Favorite else Icons.Default.FavoriteBorder,
+                                            contentDescription = null
+                                        )
+                                    }
                                 }
                             )
                             Spacer(modifier = Modifier.height(16.dp))
@@ -94,6 +111,7 @@ class ClubDetailsActivity : ComponentActivity() {
     }
 }
 
+
 @Composable
 fun ClubDetailsContent(club: Club) {
     Column(modifier = Modifier.fillMaxWidth()) {
@@ -107,7 +125,7 @@ fun ClubDetailsContent(club: Club) {
         Spacer(modifier = Modifier.height(16.dp))
         Text(
             text = club.fullNameClub,
-            style = MaterialTheme.typography.headlineMedium,
+            style = MaterialTheme.typography.headlineSmall,
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Center,
             modifier = Modifier.padding(bottom = 8.dp)

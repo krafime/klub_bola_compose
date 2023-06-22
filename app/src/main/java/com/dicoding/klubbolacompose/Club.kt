@@ -6,8 +6,8 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class Club(
     val nameClub: String,
-    val fullNameClub : String,
+    val fullNameClub: String,
     val photoClub: String,
-    val descClub: String
+    val descClub: String,
+    var isFavorite: Boolean = false
 ) : Parcelable
-

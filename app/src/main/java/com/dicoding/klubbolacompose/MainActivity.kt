@@ -1,5 +1,7 @@
 package com.dicoding.klubbolacompose
 
+import android.annotation.SuppressLint
+import android.app.AlertDialog
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -30,17 +32,24 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.Info
+import androidx.compose.material.icons.filled.Person
+import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.ProvideTextStyle
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.TextField
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.getValue
@@ -48,23 +57,25 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment.Companion.CenterHorizontally
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextAlign
+import androidx.core.content.ContextCompat.startActivity
 import coil.compose.rememberAsyncImagePainter
 import coil.compose.rememberImagePainter
 import com.dicoding.klubbolacompose.ui.theme.KlubBolaComposeTheme
+import com.dicoding.klubbolacompose.ui.theme.customFont
 
 class MainActivity : ComponentActivity() {
 
     private val list by lazy { getListClub() }
-    private val customFont = FontFamily(
-        Font(R.font.lora)
-    )
+    private var showCreatorPage by mutableStateOf(false)
 
+    @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -75,17 +86,31 @@ class MainActivity : ComponentActivity() {
                         color = MaterialTheme.colorScheme.background
                     ) {
                         Column(
-                            modifier = Modifier.padding(16.dp)
+                            modifier = Modifier.padding(horizontal = 16.dp, vertical = 5.dp)
                         ) {
-                            Text(
-                                text = stringResource(R.string.app_name),
-                                style = MaterialTheme.typography.headlineMedium,
-                                fontWeight = FontWeight.Bold,
-                                modifier = Modifier.padding(bottom = 16.dp)
+                            TopAppBar(
+                                modifier = Modifier,
+                                title = { Text(text = stringResource(R.string.app_name)) },
+                                actions = {
+                                    IconButton(
+                                        onClick = { showCreatorPage = true },
+                                        modifier = Modifier.padding(end = 8.dp)
+                                    ) {
+                                        Icon(
+                                            imageVector = Icons.Default.Person,
+                                            contentDescription = stringResource(R.string.creator)
+                                        )
+                                    }
+                                }
                             )
+                            Spacer(modifier = Modifier)
                             ClubList(list = list) { club ->
                                 onClubItemClick(club)
                             }
+                        }
+
+                        if (showCreatorPage) {
+                            CreatorPage(onNavigateUp = { showCreatorPage = false })
                         }
                     }
                 }
@@ -97,7 +122,7 @@ class MainActivity : ComponentActivity() {
         startActivity(ClubDetailsActivity.newIntent(this, club))
     }
 
-    private fun getListClub(): ArrayList<Club> {
+    private fun getListClub(): List<Club> {
         val dataName = resources.getStringArray(R.array.data_name)
         val dataPhoto = resources.getStringArray(R.array.data_photo)
         val dataFullName = resources.getStringArray(R.array.data_full_name)
@@ -113,8 +138,52 @@ class MainActivity : ComponentActivity() {
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
+@SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
-fun ClubList(list: ArrayList<Club>, onItemClick: (Club) -> Unit) {
+fun CreatorPage(onNavigateUp: () -> Unit) {
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = { Text(text = "Creator") },
+                navigationIcon = {
+                    IconButton(onClick = onNavigateUp) {
+                        Icon(Icons.Default.ArrowBack, contentDescription = "Back")
+                    }
+                }
+            )
+        }
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(16.dp),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Image(
+                painter = painterResource(R.drawable.creator_image),
+                contentDescription = "Creator Image",
+                modifier = Modifier.size(200.dp).clip(CircleShape)
+            )
+            Spacer(modifier = Modifier.height(16.dp))
+            Text(
+                text = stringResource(R.string.muhammad_rafi_irfansyah),
+                style = MaterialTheme.typography.headlineMedium,
+                fontWeight = FontWeight.Bold
+            )
+            Spacer(modifier = Modifier.height(8.dp))
+            Text(
+                text = stringResource(R.string.email),
+                style = MaterialTheme.typography.bodyLarge
+            )
+        }
+    }
+}
+
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun ClubList(list: List<Club>, onItemClick: (Club) -> Unit) {
     var searchText by remember { mutableStateOf("") }
 
     Column(modifier = Modifier.padding(16.dp)) {
@@ -179,6 +248,40 @@ fun ClubListItem(club: Club, onItemClick: (Club) -> Unit) {
     }
 }
 
+@Composable
+fun FavoriteClubListItem(club: Club) {
+    Card(
+        shape = MaterialTheme.shapes.medium,
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(vertical = 8.dp)
+    ) {
+        Row(modifier = Modifier.padding(8.dp)) {
+            Image(
+                painter = rememberAsyncImagePainter(club.photoClub),
+                contentDescription = null,
+                modifier = Modifier
+                    .size(80.dp)
+                    .align(CenterVertically)
+            )
+            Column(modifier = Modifier.padding(start = 8.dp)) {
+                Text(
+                    text = club.nameClub,
+                    style = MaterialTheme.typography.headlineSmall,
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier.padding(bottom = 8.dp)
+                )
+                Text(
+                    text = club.fullNameClub,
+                    style = MaterialTheme.typography.bodyLarge,
+                    maxLines = 5,
+                    modifier = Modifier.fillMaxWidth()
+                )
+            }
+        }
+    }
+}
+
 @Preview
 @Composable
 fun PreviewClubListItem() {
@@ -192,5 +295,13 @@ fun PreviewClubListItem() {
             ),
             onItemClick = {}
         )
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewCreatorPage() {
+    KlubBolaComposeTheme {
+        CreatorPage(onNavigateUp = {})
     }
 }
