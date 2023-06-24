@@ -86,7 +86,7 @@ class MainActivity : ComponentActivity() {
                         color = MaterialTheme.colorScheme.background
                     ) {
                         Column(
-                            modifier = Modifier.padding(horizontal = 16.dp, vertical = 5.dp)
+                            modifier = Modifier.padding(5.dp)
                         ) {
                             TopAppBar(
                                 modifier = Modifier,
